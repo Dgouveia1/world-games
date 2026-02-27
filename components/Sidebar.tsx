@@ -73,10 +73,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentView, onChangeView, ten
 
       {/* ── Branding com Logo ──────────────────────────── */}
       <div className="h-[72px] flex items-center px-5 border-b border-gray-800/70 gap-3 flex-shrink-0">
-        {/* Logo World Games */}
+        {/* Logo Grupo Curumim */}
         <img
           src="/logos/logo.png"
-          alt="World Games"
+          alt="Grupo Curumim"
           className="h-9 w-auto object-contain"
           style={{ filter: 'brightness(1.05) drop-shadow(0 2px 6px rgba(253,184,19,0.3))' }}
           onError={e => {
@@ -132,7 +132,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentView, onChangeView, ten
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-bold text-white truncate font-display leading-tight">Admin</p>
-            <p className="text-[11px] text-gray-600 truncate leading-tight">admin@worldgames.com.br</p>
+            <p className="text-[11px] text-gray-600 truncate leading-tight">admin@grupocurumim.com.br</p>
           </div>
           <button className="text-gray-600 hover:text-white transition-colors p-1" title="Sair">
             <LogOut className="w-4 h-4" />

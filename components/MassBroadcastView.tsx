@@ -70,22 +70,22 @@ const QUICK_TEMPLATES: { label: string; icon: React.ElementType; text: string }[
     {
         label: 'Lembrete de Evento',
         icon: Calendar,
-        text: 'Olá {nome}! 🎉 Passando para lembrar que a festa da {nome_crianca} está marcada para {data_evento}. Qualquer dúvida, estamos à disposição! 🎈 — World Games',
+        text: 'Olá {nome}! 🎉 Passando para lembrar que a festa da {nome_crianca} está marcada para {data_evento}. Qualquer dúvida, estamos à disposição! 🎈 — Grupo Curumim',
     },
     {
         label: 'Orçamento Especial',
         icon: Sparkles,
-        text: 'Oi {nome}! ✨ Temos uma condição especial esta semana para festas com tema {tema_festa}. Vamos conversar? Garanta a data da {nome_crianca}! 🎂 — World Games',
+        text: 'Oi {nome}! ✨ Temos uma condição especial esta semana para festas com tema {tema_festa}. Vamos conversar? Garanta a data da {nome_crianca}! 🎂 — Grupo Curumim',
     },
     {
         label: 'Follow-up',
         icon: Clock,
-        text: 'Olá {nome}! 👋 Você ainda tem interesse em realizar a festa da {nome_crianca} aqui no World Games? Podemos montar um pacote personalizado para {qtd_criancas} crianças. Responda aqui! 🎊',
+        text: 'Olá {nome}! 👋 Você ainda tem interesse em realizar a festa da {nome_crianca} aqui no Grupo Curumim? Podemos montar um pacote personalizado para {qtd_criancas} crianças. Responda aqui! 🎊',
     },
     {
         label: 'Promoção Espaço Kids',
         icon: BarChart2,
-        text: '🏠 Olá {nome}! Nosso Espaço Kids está com agenda aberta para {data_evento}. Pacotes a partir de R$ 2.500 para até 20 crianças. Quer saber mais? — World Games',
+        text: '🏠 Olá {nome}! Nosso Espaço Kids está com agenda aberta para {data_evento}. Pacotes a partir de R$ 2.500 para até 20 crianças. Quer saber mais? — Grupo Curumim',
     },
 ];
 

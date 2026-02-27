@@ -236,7 +236,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ primaryColor, onNavigate }) 
                                 <span style={{ color: primaryColor }}>bem-vindo de volta! 🎉</span>
                             </h1>
                             <p className="text-gray-400 text-base leading-relaxed max-w-md">
-                                Aqui está um resumo do seu dia no <strong className="text-gray-200">World Games</strong>.
+                                Aqui está um resumo do seu dia no <strong className="text-gray-200">Grupo Curumim</strong>.
                                 Você tem{' '}
                                 <span className="font-bold" style={{ color: primaryColor }}>{eventosHoje.length}</span>{' '}
                                 evento{eventosHoje.length !== 1 ? 's' : ''} hoje

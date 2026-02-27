@@ -37,7 +37,7 @@ const PERSONAS: Persona[] = [
     tone: 'friendly',
     creativity: 0.7,
     responseLength: 'medium',
-    systemPrompt: `Você é Lulinha, a atendente virtual do World Games — a maior referência em Festas Infantis, Espaço Kids e Recreação da região.
+    systemPrompt: `Você é Lulinha, a atendente virtual do Grupo Curumim — a maior referência em Festas Infantis, Espaço Kids e Recreação da região.
 
 Seu estilo: caloroso, alegre, usa emojis com moderação e faz a família se sentir especial desde o primeiro contato.
 
@@ -57,7 +57,7 @@ Regras obrigatórias:
     tone: 'consultative',
     creativity: 0.5,
     responseLength: 'medium',
-    systemPrompt: `Você é o Festa Pro, consultor especializado em pacotes de festa do World Games.
+    systemPrompt: `Você é o Festa Pro, consultor especializado em pacotes de festa do Grupo Curumim.
 
 Seu objetivo: qualificar o lead e guiá-lo até o pacote ideal (Básico, Encantado ou Premium), sempre tentando upgrade.
 
@@ -78,7 +78,7 @@ Técnica de upgrade: compare dois pacotes, destacando o que o cliente ganha com 
     tone: 'friendly',
     creativity: 0.6,
     responseLength: 'short',
-    systemPrompt: `Você é o Kids Guide, especialista no Espaço Kids do World Games.
+    systemPrompt: `Você é o Kids Guide, especialista no Espaço Kids do Grupo Curumim.
 
 Missão: apresentar o espaço e converter em visita presencial ou reserva.
 
@@ -101,7 +101,7 @@ Sempre encerre com: "Que tal agendar uma visita gratuita para ela conhecer? Sem 
     tone: 'professional',
     creativity: 0.4,
     responseLength: 'medium',
-    systemPrompt: `Você é o Recreio Rei, especialista em serviços de recreação externa do World Games.
+    systemPrompt: `Você é o Recreio Rei, especialista em serviços de recreação externa do Grupo Curumim.
 
 Perfil do cliente-alvo: condomínios, empresas, escolas ou famílias que querem recreadores qualificados em local externo.
 
@@ -140,9 +140,9 @@ function buildSimulatedResponse(msg: string, settings: AISettings, persona: Pers
 
   // Resposta genérica baseada no tom
   const respostas: Record<AISettings['tone'], string> = {
-    friendly: `Que legal que você entrou em contato! 🎈 Sou ${nome} do World Games. Como posso deixar a festa da criançada ainda mais especial hoje?`,
-    consultative: `Olá! Sou ${nome}, do World Games. Para montar a proposta ideal, me conta um pouco mais sobre o que você está buscando. Que tipo de evento você tem em mente?`,
-    professional: `Bom dia! ${nome} do World Games. Por favor, informe o tipo de evento, número de participantes e data prevista para que eu possa preparar uma proposta completa.`,
+    friendly: `Que legal que você entrou em contato! 🎈 Sou ${nome} do Grupo Curumim. Como posso deixar a festa da criançada ainda mais especial hoje?`,
+    consultative: `Olá! Sou ${nome}, do Grupo Curumim. Para montar a proposta ideal, me conta um pouco mais sobre o que você está buscando. Que tipo de evento você tem em mente?`,
+    professional: `Bom dia! ${nome} do Grupo Curumim. Por favor, informe o tipo de evento, número de participantes e data prevista para que eu possa preparar uma proposta completa.`,
     aggressive: `Olá! Aproveite — nossa agenda para ${new Date().toLocaleDateString('pt-BR', { month: 'long' })} está quase cheia! Me passa os detalhes do evento agora e garantimos sua data com prioridade! 🚀`,
   };
   return respostas[settings.tone] ?? respostas['friendly'];

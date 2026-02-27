@@ -40,7 +40,7 @@ const MOCK_CONVERSATIONS: Conversation[] = [
         tags: ['Orçamento Enviado'],
         messages: [
             { id: 'm1', sender: 'cliente', text: 'Oi! Quero saber mais sobre os pacotes de festa para minha filha Sofia, ela vai fazer 5 anos.', timestamp: '2026-02-27T01:40:00', status: 'read' },
-            { id: 'm2', sender: 'ia', text: 'Olá, Mariana! 🎉 Aqui é a Lulinha, do World Games! Que incrível, a Sofia vai fazer 5 aninhos! Me conta, você já tem algum tema em mente?', timestamp: '2026-02-27T01:40:45', status: 'read' },
+            { id: 'm2', sender: 'ia', text: 'Olá, Mariana! 🎉 Aqui é a Lulinha, do Grupo Curumim! Que incrível, a Sofia vai fazer 5 aninhos! Me conta, você já tem algum tema em mente?', timestamp: '2026-02-27T01:40:45', status: 'read' },
             { id: 'm3', sender: 'cliente', text: 'Sim! Ela ama Princesa Sofia. Seriam umas 30 crianças no dia 15/03.', timestamp: '2026-02-27T01:42:00', status: 'read' },
             { id: 'm4', sender: 'ia', text: 'Perfeito! Para 30 crianças com tema Princesa Sofia, temos o Pacote Encantado a partir de R$ 4.200. Inclui decoração temática, recreação por 3h e buffet kids. Posso te enviar os detalhes completos?', timestamp: '2026-02-27T01:43:00', status: 'read' },
             { id: 'm5', sender: 'vendedor', text: 'Mariana, tudo bem? Sou a Camila, responsável pelo seu atendimento! Vou te enviar o orçamento personalizado agora. 😊', timestamp: '2026-02-27T01:45:00', status: 'read' },
@@ -64,7 +64,7 @@ const MOCK_CONVERSATIONS: Conversation[] = [
             { id: 'm1', sender: 'cliente', text: 'Boa tarde! Vocês já receberam meu contrato assinado?', timestamp: '2026-02-26T14:00:00', status: 'read' },
             { id: 'm2', sender: 'vendedor', text: 'Oi Patrícia! Sim, recebemos. Tudo certo! Agora precisamos do sinal de R$ 1.500 para confirmar a data do Pedro. 🎈', timestamp: '2026-02-26T14:05:00', status: 'read' },
             { id: 'm3', sender: 'cliente', text: 'Ótimo! Posso pagar via PIX?', timestamp: '2026-02-26T14:08:00', status: 'read' },
-            { id: 'm4', sender: 'ia', text: 'Claro, Patrícia! Nossa chave PIX é festas@worldgames.com.br. Após o pagamento, envie o comprovante aqui mesmo! ✅', timestamp: '2026-02-26T14:09:00', status: 'read' },
+            { id: 'm4', sender: 'ia', text: 'Claro, Patrícia! Nossa chave PIX é festas@grupocurumim.com.br. Após o pagamento, envie o comprovante aqui mesmo! ✅', timestamp: '2026-02-26T14:09:00', status: 'read' },
             { id: 'm5', sender: 'cliente', text: 'Vou enviar o comprovante do sinal agora!', timestamp: '2026-02-27T00:22:00', status: 'read' },
         ],
     },

@@ -1,5 +1,5 @@
 // ============================================================
-// TIPOS GLOBAIS — Copiloto IA | World Games
+// TIPOS GLOBAIS — Copiloto IA | Grupo Curumim
 // ============================================================
 
 // ── Temperatura / Qualificação do Lead ───────────────────────
@@ -14,7 +14,7 @@ export type FunnelStage =
   | 'fechamento'
   | 'confirmado';
 
-// ── Tipos de Serviço oferecidos pelo World Games ─────────────
+// ── Tipos de Serviço oferecidos pelo Grupo Curumim ───────────
 export type TipoServico = 'festa' | 'espaco_kids' | 'recreacao' | 'outro';
 
 // ── Tags de conversa no Chat ─────────────────────────────────

@@ -43,7 +43,7 @@ const TIPO_LABEL: Record<string, string> = {
 };
 
 const LOCAL_LABEL: Record<string, string> = {
-    no_espaco: 'No Espaço World Games',
+    no_espaco: 'No Espaço Curumim',
     em_casa: 'No endereço do cliente',
     a_definir: 'A definir',
 };

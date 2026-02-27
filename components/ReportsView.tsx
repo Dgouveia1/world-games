@@ -692,7 +692,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({ primaryColor }) => {
                         <BarChart2 className="w-7 h-7" style={{ color: primaryColor }} />
                         Relatórios & BI
                     </h2>
-                    <p className="text-gray-500 text-sm mt-1">Visão gerencial e estratégica do World Games</p>
+                    <p className="text-gray-500 text-sm mt-1">Visão gerencial e estratégica do Grupo Curumim</p>
                 </div>
                 <div className="relative">
                     <select value={periodo} onChange={e => setPeriodo(e.target.value)}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Copiloto IA — World Games</title>
+  <title>Copiloto IA — Grupo Curumim</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- ── Tipografia ─────────────────────────────────────────── -->
@@ -20,18 +20,18 @@
       theme: {
         extend: {
           fontFamily: {
-            sans:    ['Source Sans 3', 'sans-serif'],
+            sans: ['Source Sans 3', 'sans-serif'],
             display: ['Nunito', 'sans-serif'],
-            mono:    ['JetBrains Mono', 'monospace'],
+            mono: ['JetBrains Mono', 'monospace'],
           },
           colors: {
             brand: {
-              50:  '#fffbeb',
+              50: '#fffbeb',
               100: '#fef3c7',
               200: '#fde68a',
               300: '#fcd34d',
               400: '#fbbf24',
-              500: '#FDB813', // World Games Yellow
+              500: '#FDB813', // Curumim Yellow
               600: '#d97706',
               700: '#b45309',
               800: '#92400e',
@@ -43,11 +43,11 @@
               700: '#111827',
               600: '#1f2937',
             },
-            worldgames: {
+            curumim: {
               yellow: '#FDB813',
-              blue:   '#1e3a5f',
-              green:  '#22c55e',
-              dark:   '#151515',
+              blue: '#1e3a5f',
+              green: '#22c55e',
+              dark: '#151515',
             }
           },
           fontSize: {
@@ -63,14 +63,14 @@
             'subtitle': '1.5px',
           },
           borderRadius: {
-            'blob':  '30% 70% 70% 30% / 30% 45% 55% 70%',
+            'blob': '30% 70% 70% 30% / 30% 45% 55% 70%',
             'blob2': '62% 38% 82% 18% / 54% 61% 39% 46%',
-            'btn':   '20px',
-            'card':  '15px',
+            'btn': '20px',
+            'card': '15px',
           },
           animation: {
             'float': 'float 4s ease-in-out infinite',
-            'blob':  'blobAnim 8s ease-in-out infinite',
+            'blob': 'blobAnim 8s ease-in-out infinite',
             'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             'spin-slow': 'spin 3s linear infinite',
             'fade-in-up': 'fadeInUp 0.6s ease forwards',
@@ -78,11 +78,11 @@
           keyframes: {
             float: {
               '0%, 100%': { transform: 'translateY(0px)' },
-              '50%':      { transform: 'translateY(-12px)' },
+              '50%': { transform: 'translateY(-12px)' },
             },
             blobAnim: {
               '0%, 100%': { borderRadius: '30% 70% 70% 30% / 30% 45% 55% 70%' },
-              '50%':      { borderRadius: '62% 38% 82% 18% / 54% 61% 39% 46%' },
+              '50%': { borderRadius: '62% 38% 82% 18% / 54% 61% 39% 46%' },
             },
             fadeInUp: {
               '0%': { opacity: '0', transform: 'translateY(16px)' },
@@ -91,8 +91,8 @@
           },
           boxShadow: {
             'navbar': '1px 5px 10px rgba(49, 49, 49, 0.21)',
-            'card':   '0 4px 24px rgba(0,0,0,0.25)',
-            'glow':   '0 0 40px rgba(253, 184, 19, 0.25)',
+            'card': '0 4px 24px rgba(0,0,0,0.25)',
+            'glow': '0 0 40px rgba(253, 184, 19, 0.25)',
           },
         }
       }
@@ -101,9 +101,15 @@
 
   <style>
     /* ── Reset + Base ─────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       background-color: #040812;
@@ -117,42 +123,103 @@
     }
 
     /* ── Hierarquia Tipográfica ─────────────────────────── */
-    h1, h2, h3, h4, h5, h6,
-    .font-display { font-family: 'Nunito', sans-serif; }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .font-display {
+      font-family: 'Nunito', sans-serif;
+    }
 
     h1 {
-      font-size: 3.2em; line-height: 1.1; font-weight: 900;
-      color: #151515; text-transform: uppercase;
+      font-size: 3.2em;
+      line-height: 1.1;
+      font-weight: 900;
+      color: #151515;
+      text-transform: uppercase;
     }
-    h2 { font-size: 2.8em; line-height: 1.0; font-weight: 800; color: #151515; }
-    h3 { font-size: 2.2em; line-height: 1.1; font-weight: 600; color: #151515; margin-bottom: 20px; }
-    h4 { font-size: 1.8em; font-weight: 600; color: #404044; margin-bottom: 20px; }
-    h5 { font-size: 1.5em; font-weight: 600; color: #414242; margin-bottom: 20px; }
-    h6 { font-size: 1.3em; font-weight: 500; color: #0E1B23; margin-bottom: 20px; }
+
+    h2 {
+      font-size: 2.8em;
+      line-height: 1.0;
+      font-weight: 800;
+      color: #151515;
+    }
+
+    h3 {
+      font-size: 2.2em;
+      line-height: 1.1;
+      font-weight: 600;
+      color: #151515;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 1.8em;
+      font-weight: 600;
+      color: #404044;
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #414242;
+      margin-bottom: 20px;
+    }
+
+    h6 {
+      font-size: 1.3em;
+      font-weight: 500;
+      color: #0E1B23;
+      margin-bottom: 20px;
+    }
 
     /* No dark mode, os títulos ficam brancos */
-    .dark h1, .dark h2, .dark h3 { color: #f8fafc; }
-    .dark h4, .dark h5 { color: #e2e8f0; }
-    .dark h6 { color: #cbd5e1; }
+    .dark h1,
+    .dark h2,
+    .dark h3 {
+      color: #f8fafc;
+    }
+
+    .dark h4,
+    .dark h5 {
+      color: #e2e8f0;
+    }
+
+    .dark h6 {
+      color: #cbd5e1;
+    }
 
     /* ── Classes Utilitárias de Tipografia ─────────────── */
     .h7 {
       font-family: 'Nunito', sans-serif;
-      font-size: 0.95em; font-weight: 900; line-height: 1.3;
-      color: #949393; letter-spacing: 1px; text-transform: uppercase;
+      font-size: 0.95em;
+      font-weight: 900;
+      line-height: 1.3;
+      color: #949393;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .lead {
       font-family: 'Nunito', sans-serif;
-      font-size: 1.15em; line-height: 1.3;
+      font-size: 1.15em;
+      line-height: 1.3;
     }
 
     .subtitle {
       font-family: 'Nunito', sans-serif;
-      font-size: 0.93em; font-weight: 700; color: #949393;
-      text-transform: uppercase; letter-spacing: 1.5px;
+      font-size: 0.93em;
+      font-weight: 700;
+      color: #949393;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
       border-bottom: 1px dashed currentColor;
-      padding-bottom: 4px; display: inline-block;
+      padding-bottom: 4px;
+      display: inline-block;
     }
 
     /* ── Componentes ────────────────────────────────────── */
@@ -164,13 +231,18 @@
       letter-spacing: 1px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(253,184,19,0.35); }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 24px rgba(253, 184, 19, 0.35);
+    }
 
     .card {
       background: #f5f5f5;
       border-radius: 15px;
       padding: 30px;
     }
+
     .dark .card {
       background: rgba(17, 24, 39, 0.7);
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -185,19 +257,45 @@
     }
 
     /* ── Scrollbar personalizado ────────────────────────── */
-    ::-webkit-scrollbar { width: 5px; height: 5px; }
-    ::-webkit-scrollbar-track { background: #0a0f1f; }
-    ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #374151; }
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0a0f1f;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #1f2937;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #374151;
+    }
 
     /* ── Formas Orgânicas (Blob) ────────────────────────── */
-    .blob  { border-radius: 30% 70% 70% 30% / 30% 45% 55% 70%; }
-    .blob2 { border-radius: 62% 38% 82% 18% / 54% 61% 39% 46%; }
+    .blob {
+      border-radius: 30% 70% 70% 30% / 30% 45% 55% 70%;
+    }
+
+    .blob2 {
+      border-radius: 62% 38% 82% 18% / 54% 61% 39% 46%;
+    }
 
     /* ── Utilitário de Imagem ───────────────────────────── */
-    .img-zoom-hover { overflow: hidden; }
-    .img-zoom-hover img { transition: transform 0.4s ease; }
-    .img-zoom-hover:hover img { transform: scale(1.1); }
+    .img-zoom-hover {
+      overflow: hidden;
+    }
+
+    .img-zoom-hover img {
+      transition: transform 0.4s ease;
+    }
+
+    .img-zoom-hover:hover img {
+      transform: scale(1.1);
+    }
 
     /* ── Seções ─────────────────────────────────────────── */
     section {
@@ -206,45 +304,99 @@
     }
 
     /* ── Overlays ───────────────────────────────────────── */
-    .overlay       { position: absolute; inset: 0; }
-    .overlay-dark  { background: rgba(0,0,0,0.55); }
-    .overlay-light { background: rgba(255,255,255,0.4); }
+    .overlay {
+      position: absolute;
+      inset: 0;
+    }
+
+    .overlay-dark {
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .overlay-light {
+      background: rgba(255, 255, 255, 0.4);
+    }
 
     /* ── Tela de Loading ────────────────────────────────── */
     #loading-screen {
-      position: fixed; inset: 0; z-index: 9999;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
       background: #040812;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       gap: 32px;
       transition: opacity 0.6s ease, visibility 0.6s ease;
     }
-    #loading-screen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+    #loading-screen.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
 
     /* ── Responsivo ─────────────────────────────────────── */
     @media (max-width: 380px) {
-      body { font-size: 15px; }
-      h1 { font-size: 2.2em; }
-      h2 { font-size: 2em; }
+      body {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
     }
+
     @media (max-width: 544px) {
-      h1 { font-size: 2.6em; }
-      h2 { font-size: 2.2em; }
-      section { padding-top: 60px; padding-bottom: 60px; }
+      h1 {
+        font-size: 2.6em;
+      }
+
+      h2 {
+        font-size: 2.2em;
+      }
+
+      section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
     }
+
     @media (max-width: 767px) {
-      h1 { font-size: 2.8em; }
-      h2 { font-size: 2.4em; }
-      .section-heading h2 { font-size: 42px; }
+      h1 {
+        font-size: 2.8em;
+      }
+
+      h2 {
+        font-size: 2.4em;
+      }
+
+      .section-heading h2 {
+        font-size: 42px;
+      }
     }
+
     @media (max-width: 991px) {
-      .section-heading h2 { font-size: 52px; }
+      .section-heading h2 {
+        font-size: 52px;
+      }
     }
+
     @media (min-width: 1200px) {
-      .section-heading h2 { font-size: 62px; }
+      .section-heading h2 {
+        font-size: 62px;
+      }
     }
+
     @media (min-width: 1500px) {
-      .section-heading h2 { font-size: 72px; }
+      .section-heading h2 {
+        font-size: 72px;
+      }
     }
 
     /* ── Animação de entrada ────────────────────────────── */
@@ -253,11 +405,19 @@
     }
 
     /* ── Range input accent ─────────────────────────────── */
-    input[type="range"] { accent-color: #FDB813; }
+    input[type="range"] {
+      accent-color: #FDB813;
+    }
 
     /* Fonte Nunito em elementos de UI específicos */
-    button, .font-display, label, th,
-    .sidebar-label, nav a { font-family: 'Nunito', sans-serif; }
+    button,
+    .font-display,
+    label,
+    th,
+    .sidebar-label,
+    nav a {
+      font-family: 'Nunito', sans-serif;
+    }
   </style>
 </head>
 
@@ -267,25 +427,26 @@
   <div id="loading-screen">
     <!-- Efeito de brilho de fundo -->
     <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;">
-      <div style="position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:400px;height:400px;background:radial-gradient(circle,rgba(253,184,19,0.12) 0%,transparent 70%);border-radius:50%;"></div>
+      <div
+        style="position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:400px;height:400px;background:radial-gradient(circle,rgba(253,184,19,0.12) 0%,transparent 70%);border-radius:50%;">
+      </div>
     </div>
 
-    <!-- Logo World Games -->
+    <!-- Logo Grupo Curumim -->
     <div style="animation: float 3s ease-in-out infinite;">
-      <img
-        src="/logos/logo.png"
-        alt="World Games"
+      <img src="/logos/logo.png" alt="Grupo Curumim"
         style="height:80px;width:auto;object-fit:contain;filter:drop-shadow(0 4px 24px rgba(253,184,19,0.4));"
-        onerror="this.style.display='none'"
-      />
+        onerror="this.style.display='none'" />
     </div>
 
     <!-- Texto Copiloto IA -->
     <div style="text-align:center;">
-      <p style="font-family:'Nunito',sans-serif;font-size:0.85em;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6A6A71;margin-bottom:4px;">
+      <p
+        style="font-family:'Nunito',sans-serif;font-size:0.85em;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#6A6A71;margin-bottom:4px;">
         ✦ POWERED BY
       </p>
-      <p style="font-family:'Nunito',sans-serif;font-size:1.5em;font-weight:900;letter-spacing:2px;color:#FDB813;text-shadow:0 0 20px rgba(253,184,19,0.5);">
+      <p
+        style="font-family:'Nunito',sans-serif;font-size:1.5em;font-weight:900;letter-spacing:2px;color:#FDB813;text-shadow:0 0 20px rgba(253,184,19,0.5);">
         COPILOTO IA 2.0
       </p>
     </div>
@@ -310,34 +471,34 @@
 
   <!-- Script da tela de loading -->
   <script>
-    (function () {
-      const screen = document.getElementById('loading-screen');
-      const bar    = document.getElementById('loading-bar');
-      const txt    = document.getElementById('loading-text');
-      if (!screen || !bar || !txt) return;
+      (function () {
+        const screen = document.getElementById('loading-screen');
+        const bar = document.getElementById('loading-bar');
+        const txt = document.getElementById('loading-text');
+        if (!screen || !bar || !txt) return;
 
-      const steps = [
-        [10,  'Carregando dados…'],
-        [30,  'Conectando ao World Games…'],
-        [55,  'Inicializando Copiloto IA…'],
-        [75,  'Preparando painel de eventos…'],
-        [90,  'Quase lá…'],
-        [100, 'Pronto! 🎉'],
-      ];
+        const steps = [
+          [10, 'Carregando dados…'],
+          [30, 'Conectando ao Grupo Curumim…'],
+          [55, 'Inicializando Copiloto IA…'],
+          [75, 'Preparando painel de eventos…'],
+          [90, 'Quase lá…'],
+          [100, 'Pronto! 🎉'],
+        ];
 
-      let i = 0;
-      const advance = () => {
-        if (i >= steps.length) return;
-        const [pct, msg] = steps[i++];
-        bar.style.width = pct + '%';
-        txt.textContent = msg;
-        if (i < steps.length) setTimeout(advance, 320 + Math.random() * 180);
-        else setTimeout(() => { screen.classList.add('hidden'); }, 600);
-      };
+        let i = 0;
+        const advance = () => {
+          if (i >= steps.length) return;
+          const [pct, msg] = steps[i++];
+          bar.style.width = pct + '%';
+          txt.textContent = msg;
+          if (i < steps.length) setTimeout(advance, 320 + Math.random() * 180);
+          else setTimeout(() => { screen.classList.add('hidden'); }, 600);
+        };
 
-      // Começar após um pequeno delay para garantir que React montou
-      setTimeout(advance, 200);
-    })();
+        // Começar após um pequeno delay para garantir que React montou
+        setTimeout(advance, 200);
+      })();
   </script>
 </body>
 

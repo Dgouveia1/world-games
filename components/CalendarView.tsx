@@ -201,7 +201,7 @@ const EventModal: React.FC<{ ev: CalEvent | null; onClose: () => void; onNavigat
                         {lead.local_preferido && (
                             <div className="flex items-center gap-2 text-sm text-gray-400 col-span-2">
                                 <MapPin className="w-3.5 h-3.5 text-gray-600 flex-shrink-0" />
-                                <span>{{ no_espaco: 'Espaço World Games', em_casa: 'Endereço do cliente', a_definir: 'A definir' }[lead.local_preferido] ?? lead.local_preferido}</span>
+                                <span>{{ no_espaco: 'Espaço Curumim', em_casa: 'Endereço do cliente', a_definir: 'A definir' }[lead.local_preferido] ?? lead.local_preferido}</span>
                             </div>
                         )}
                     </div>

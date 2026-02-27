@@ -18,7 +18,7 @@ import { Lead } from './types';
 const App = () => {
   const [currentView, setCurrentView] = useState('dashboard');
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
-  const [tenantId] = useState('world-games'); // Tenant ativo: World Games
+  const [tenantId] = useState('curumim'); // Tenant ativo: Grupo Curumim
 
   const tenant = TENANTS[tenantId] || ACTIVE_TENANT;
 

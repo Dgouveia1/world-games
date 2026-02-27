@@ -5,14 +5,14 @@ import { Lead, Tenant, Vendedor } from './types';
 // ============================================================
 
 export const TENANTS: Record<string, Tenant> = {
-    'world-games': {
-        id: 'world-games',
-        name: 'World Games',
+    'curumim': {
+        id: 'curumim',
+        name: 'Grupo Curumim',
         primaryColor: '#FDB813',    // Amarelo vibrante da marca
         secondaryColor: '#1e3a5f',  // Azul escuro profundo
         accentColor: '#22c55e',     // Verde festivo (accent)
-        logoText: 'WG',
-        slug: 'world-games',
+        logoText: 'GC',
+        slug: 'curumim',
         nicho: 'eventos_infantis',
     },
     'default': {
@@ -34,7 +34,7 @@ export const TENANTS: Record<string, Tenant> = {
 };
 
 // ── Tenant padrão ─────────────────────────────────────────────
-export const ACTIVE_TENANT = TENANTS['world-games'];
+export const ACTIVE_TENANT = TENANTS['curumim'];
 
 // ============================================================
 // VENDEDORES — Equipe de Eventos
@@ -44,7 +44,7 @@ export const MOCK_VENDEDORES: Vendedor[] = [
     {
         id: 'v1',
         nome: 'Camila Rocha',
-        email: 'camila@worldgames.com.br',
+        email: 'camila@grupocurumim.com.br',
         avatar_iniciais: 'CR',
         cor_avatar: 'bg-pink-500',
         ativo: true,
@@ -52,7 +52,7 @@ export const MOCK_VENDEDORES: Vendedor[] = [
     {
         id: 'v2',
         nome: 'Rafael Souza',
-        email: 'rafael@worldgames.com.br',
+        email: 'rafael@grupocurumim.com.br',
         avatar_iniciais: 'RS',
         cor_avatar: 'bg-blue-500',
         ativo: true,
@@ -60,7 +60,7 @@ export const MOCK_VENDEDORES: Vendedor[] = [
     {
         id: 'v3',
         nome: 'Jéssica Alves',
-        email: 'jessica@worldgames.com.br',
+        email: 'jessica@grupocurumim.com.br',
         avatar_iniciais: 'JA',
         cor_avatar: 'bg-violet-500',
         ativo: true,
@@ -68,7 +68,7 @@ export const MOCK_VENDEDORES: Vendedor[] = [
     {
         id: 'v4',
         nome: 'Bruno Mendes',
-        email: 'bruno@worldgames.com.br',
+        email: 'bruno@grupocurumim.com.br',
         avatar_iniciais: 'BM',
         cor_avatar: 'bg-emerald-500',
         ativo: false,
